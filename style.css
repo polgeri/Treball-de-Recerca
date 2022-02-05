@@ -1,270 +1,394 @@
-                    * {
-                        box-sizing: border-box;
-                        margin: 0%;
-                        padding: 0%;
-                    }
-                    
-                    body {
-                        background-color: #191919;
-                        color: #fff;
-                        font-size: 1em;
-                        font-family: 'Montserrat', sans-serif;
-                        letter-spacing: -0.5px;
-                    }
-                    
-                    a {
-                        color: #fff;
-                        text-decoration: none;
-                    }
-                    
-                    ul {
-                        list-style: none;
-                    }
-                    
-                    .header {
-                        background: linear-gradient(to top, #191919, #2b2b2b);
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: nowrap;
-                        padding: 25px 2px;
-                        margin: 0px 0 50px 0;
-                    }
-                    
-                    .instagram,
-                    .facebook {
-                        display: inline;
-                        font-size: 20px;
-                        padding: 0px 10px;
-                    }
-                    
-                    .right-header em {
-                        margin: 0px 10px;
-                    }
-                    
-                    .right-header a {
-                        font-size: 13px;
-                        transform: none;
-                        margin: 0 5px;
-                    }
-                    
-                    .header-contact {
-                        font-size: 13px;
-                        margin: 0 5px;
-                    }
-                    
-                    .container {
-                        width: 90%;
-                        margin: auto;
-                    }
-                    /*NAVIGATION*/
-                    
-                    .nav-main {
-                        font-size: 1em;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        height: 95px;
-                        padding: 30px 0px 0px 0px;
-                        height: -50px;
-                        margin: auto;
-                    }
-                    
-                    .nav-main h1 {
-                        display: inline-block;
-                        position: static;
-                        text-align: center;
-                        height: 29px;
-                        margin: 0;
-                    }
-                    
-                    .brand {
-                        padding: -10px;
-                    }
-                    
-                    .nav-brand {
-                        display: inline-block;
-                        position: static;
-                        margin: 0;
-                        width: 55px;
-                        cursor: pointer;
-                        margin: 0 -13px 0 0;
-                    }
-                    
-                    .nav-search li {
-                        font-size: 20px;
-                        padding: 5px;
-                    }
-                    
-                    .nav-main ul {
-                        display: flex;
-                    }
-                    
-                    .nav-main h1 {
-                        text-align: center;
-                    }
-                    /* NAV UNDERHEADER*/
-                    
-                    .nav-menu {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        height: 57px;
-                        padding: 20px 0px;
-                        margin: 30px 0;
-                    }
-                    
-                    .nav-left {
-                        font-size: 20px;
-                        padding: 5px;
-                        cursor: pointer;
-                    }
-                    
-                    .nav-middle {
-                        display: inline-flex;
-                    }
-                    
-                    .nav-middle li {
-                        padding: 10px;
-                        text-align: center;
-                        font-size: 15px;
-                    }
-                    
-                    .nav-middle li a:hover {
-                        border-bottom: 1px solid #fff;
-                    }
-                    
-                    .nav-right {
-                        font-size: 20px;
-                        padding: 5px;
-                    }
-                    /* SHOWCASE*/
-                    
-                    .showcase {
-                        width: 100%;
-                        height: 765px;
-                        margin: 100px 0px;
-                        padding: 20px 0;
-                        background: url('./img/brand-discover2.png') no-repeat center center/cover;
-                        padding-bottom: 10px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    
-                    .btn-discover {
-                        cursor: pointer;
-                        display: inline-block;
-                        border: 0;
-                        font-weight: bold;
-                        padding: 14px 32px;
-                        background-color: #191919;
-                        color: #fff;
-                        font-size: 14px;
-                        border: 1px solid #fff;
-                        margin: 10px 0px;
-                        box-shadow: 3px 3px 4px 4px #191919;
-                    }
-                    
-                    .btn-discover:hover {
-                        opacity: .7;
-                    }
-                    /* LATEST NEWS */
-                    
-                    .news {
-                        color: #fff;
-                        padding: 15px 0;
-                    }
-                    
-                    .news ul {
-                        display: flex;
-                    }
-                    
-                    .news ul li {
-                        padding: 15px;
-                    }
-                    
-                    .latest-news-tittle {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-wrap: nowrap;
-                        height: 150px;
-                        margin-bottom: 55px;
-                    }
-                    
-                    .latest-news-body {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr 1fr;
-                        gap: 25px;
-                        margin: 10px 0;
-                        font-size: 12px;
-                        text-align: center;
-                        text-decoration: none;
-                    }
-                    
-                    .latest-news-body img {
-                        width: 100%;
-                        height: 500px;
-                        cursor: pointer;
-                        padding: 70px 0 0 0;
-                    }
-                    
-                    .latest-news-body h3 {
-                        position: relative;
-                        cursor: pointer;
-                        top: 20px;
-                        font-size: 14px;
-                        padding: 0px;
-                    }
-                    
-                    .latest-news-body h4 {
-                        position: relative;
-                        top: 35px;
-                        font-size: 11px;
-                        padding: 0;
-                    }
-                    
-                    .latest-news-body h3:hover {
-                        opacity: .7;
-                    }
-                    
-                    @media (max-width:1024px),
-                    (max-height:500px) {
-                        .nav-main h1 {
-                            position: relative;
-                            right: 1000px
-                        }
-                        .nav-brand {
-                            display: flex;
-                        }
-                        .latest-news-body {
-                            grid-template-columns: repeat(2, 1fr);
-                        }
-                        .latest-news-body img {
-                            height: 300px;
-                        }
-                        .bars-btn {
-                            display: block;
-                        }
-                        .nav.left {
-                            transform: translateX(-500px);
-                            transition: transform 0.5s ease-in-out;
-                        }
-                        .nav.left li {
-                            padding: 20px;
-                            border-bottom: #ccc solid 1px;
-                            font-size: 14px;
-                        }
-                    }
-                    
-                    @media (max-width:700px) {
-                        .latest-news-body {
-                            grid-template-columns: repeat(1, 1fr);
-                        }
-                        .latest-news-body img {
-                            height: 300px;
-                        }
-                    }
+                            * {
+                                box-sizing: border-box;
+                                margin: 0%;
+                                padding: 0%;
+                            }
+                            
+                            body {
+                                background-color: #191919;
+                                color: #fff;
+                                font-size: 1em;
+                                font-family: 'Montserrat', sans-serif;
+                                letter-spacing: -0.5px;
+                            }
+                            
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                            
+                            ul {
+                                list-style: none;
+                            }
+                            
+                            .header {
+                                background: linear-gradient(to top, #191919, #2b2b2b);
+                                display: flex;
+                                width: 100%;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                padding: 25px 2px;
+                                margin: 0px 0 50px 0;
+                            }
+                            
+                            .nav-header-left {
+                                display: inline-flex;
+                            }
+                            
+                            .nav-header-left li {
+                                padding: 0px 5px;
+                                align-items: center;
+                                font-size: 20px;
+                            }
+                            
+                            .nav-header-left li a {
+                                color: #cccaca;
+                            }
+                            
+                            .nav-header-left li a:hover {
+                                color: #fff;
+                            }
+                            
+                            .instagram em,
+                            .facebook em {
+                                margin: 0 10px;
+                                cursor: pointer;
+                            }
+                            
+                            .right-header em {
+                                margin: 0px 10px;
+                            }
+                            
+                            .right-header a {
+                                font-size: 13px;
+                                transform: none;
+                                margin: 0 5px;
+                            }
+                            
+                            .right-header li a {
+                                padding: 0 10px;
+                                color: #cccaca;
+                            }
+                            
+                            .right-header li a:hover {
+                                color: #fff;
+                            }
+                            
+                            .header-contact {
+                                font-size: 13px;
+                                margin: 0 5px;
+                                position: relative;
+                                top: 4px;
+                                color: rgb(221, 221, 221);
+                            }
+                            
+                            .container {
+                                width: 90%;
+                                margin: auto;
+                            }
+                            /*NAVIGATION*/
+                            
+                            .nav-main {
+                                font-size: 1em;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 95px;
+                                padding: 30px 0px 0px 0px;
+                                height: -50px;
+                                margin: auto;
+                            }
+                            
+                            .nav-main h1 {
+                                display: inline-block;
+                                position: static;
+                                text-align: center;
+                                height: 29px;
+                                margin: 0;
+                            }
+                            
+                            .brand {
+                                padding: -10px;
+                            }
+                            
+                            .nav-brand {
+                                display: inline-block;
+                                position: static;
+                                margin: 0;
+                                width: 55px;
+                                cursor: pointer;
+                                margin: 0 -13px 0 0;
+                            }
+                            
+                            .nav-search li {
+                                font-size: 20px;
+                                padding: 5px;
+                                color: #cccaca;
+                            }
+                            
+                            .nav-search li a {
+                                color: #cccaca;
+                            }
+                            
+                            .nav-search li a:hover {
+                                color: #fff;
+                            }
+                            
+                            .nav-main ul {
+                                display: flex;
+                            }
+                            
+                            .nav-main h1 {
+                                text-align: center;
+                            }
+                            /* NAV UNDERHEADER*/
+                            
+                            .nav-menu {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 57px;
+                                padding: 20px 0px;
+                                margin: 30px 0;
+                            }
+                            
+                            .nav-left {
+                                font-size: 20px;
+                                padding: 5px;
+                                cursor: pointer;
+                            }
+                            
+                            .nav-left li a {
+                                color: #cccaca;
+                            }
+                            
+                            .nav-left li a:hover {
+                                color: #fff;
+                            }
+                            
+                            .nav-middle {
+                                display: inline-flex;
+                            }
+                            
+                            .nav-middle li {
+                                padding: 10px;
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                            
+                            .nav-middle li a {
+                                color: rgb(221, 221, 221);
+                            }
+                            
+                            .nav-middle li a:hover {
+                                border-bottom: 1px solid #fff;
+                                color: #fff;
+                            }
+                            
+                            .nav-right li {
+                                font-size: 20px;
+                                padding: 5px;
+                            }
+                            
+                            .nav-right li a {
+                                color: #cccaca;
+                                transition: 0s;
+                            }
+                            
+                            .nav-right li a:hover {
+                                color: #fff;
+                            }
+                            /* SLIDER */
+                            
+                            .slide-wrap {
+                                padding: 150px 0 50px 0;
+                            }
+                            
+                            .slider1 {
+                                width: 100%;
+                            }
+                            
+                            .slider1 li img {
+                                height: 500px;
+                                padding: 0px 0;
+                            }
+                            /* LOCATION */
+                            
+                            .location {
+                                margin: 50px 0;
+                                padding: 100px 0;
+                                text-align: center;
+                            }
+                            
+                            .direction {
+                                text-align: center;
+                                padding: 50px 0 100px 0;
+                                color: #fff;
+                                font-size: 18px;
+                            }
+                            /* SHOWCASE*/
+                            
+                            .showcase {
+                                width: 100%;
+                                height: 950px;
+                                margin: 100px 0px 200px 0;
+                                padding: 20px 0 10px 0;
+                                background: url('./img/brand-discover2.png') no-repeat center center/cover;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                transition-duration: 1s;
+                            }
+                            
+                            .showcase:hover {
+                                transform: translateZ();
+                            }
+                            
+                            .btn-discover {
+                                cursor: pointer;
+                                display: inline-block;
+                                border: 0;
+                                font-weight: bold;
+                                padding: 14px 32px;
+                                background-color: #000;
+                                color: #fff;
+                                font-size: 14px;
+                                border: 1px solid #fff;
+                                margin: 10px 0px;
+                                box-shadow: 0 0px 30px 0 #000;
+                                transition-property: background-color;
+                                transition-duration: 0.20s;
+                                transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                            }
+                            
+                            .btn-discover:hover {
+                                background-color: #fff;
+                                color: #000;
+                                border: 1px solid #000;
+                                box-shadow: 0 0px 30px 0 #fff;
+                            }
+                            /* LATEST NEWS */
+                            
+                            .news {
+                                color: #fff;
+                                padding: 15px 0;
+                                margin: 300px 0 300px 0;
+                            }
+                            
+                            .news ul {
+                                display: flex;
+                            }
+                            
+                            .news ul li {
+                                padding: 15px;
+                            }
+                            
+                            .latest-news-tittle {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                height: 150px;
+                                margin-bottom: 320px;
+                            }
+                            
+                            .latest-news-body {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr;
+                                gap: 125px 35px;
+                                margin: 70px 0;
+                                font-size: 12px;
+                                text-align: center;
+                                text-decoration: none;
+                            }
+                            
+                            .latest-news-body img {
+                                width: 450px;
+                                height: 500px;
+                                cursor: pointer;
+                                grid-template-columns: repeat(auto-fit);
+                            }
+                            
+                            .latest-news-body h3 {
+                                position: relative;
+                                cursor: pointer;
+                                top: 20px;
+                                font-size: 14px;
+                                padding: 0px;
+                                margin-top: 20px;
+                            }
+                            
+                            .latest-news-body h4 {
+                                position: relative;
+                                top: 35px;
+                                font-size: 11px;
+                                padding: 0;
+                            }
+                            
+                            .info a h3 {
+                                color: rgb(221, 221, 221);
+                            }
+                            
+                            .latest-news-body h3:hover {
+                                color: #fff;
+                            }
+                            
+                            @media (max-width:1200px),
+                            (max-height:500px) {
+                                .nav-brand {
+                                    display: flex;
+                                }
+                                .latest-news-body {
+                                    grid-template-columns: repeat(2, 1fr);
+                                }
+                                .latest-news-body img {
+                                    height: 300px;
+                                }
+                                .bars-btn {
+                                    display: block;
+                                }
+                                .nav.left {
+                                    transform: translateX(-500px);
+                                    transition: transform 0.5s ease-in-out;
+                                }
+                                .nav.left li {
+                                    padding: 20px;
+                                    border-bottom: #ccc solid 1px;
+                                    font-size: 14px;
+                                }
+                                .showcase {
+                                    height: 380px;
+                                }
+                                .btn-discover {
+                                    padding: 7px 16px;
+                                    font-size: 11px;
+                                    margin: 10px 0px;
+                                    transform: none;
+                                    border: 0;
+                                    font-weight: bold;
+                                }
+                                .showcase {
+                                    height: 600px;
+                                }
+                            }
+                            
+                            @media (max-width:500px) {
+                                * {
+                                    font-size: 13px;
+                                }
+                                .latest-news-body {
+                                    grid-template-columns: repeat(1, 1fr);
+                                }
+                                .latest-news-body img {
+                                    height: 300px;
+                                }
+                                .nav-main h1 {}
+                                .latest-news-tittle {
+                                    margin-bottom: 190px;
+                                }
+                                .news {
+                                    margin-top: 130px;
+                                }
+                            }

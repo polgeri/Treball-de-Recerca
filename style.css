@@ -19,6 +19,8 @@
                                 font-size: 1em;
                                 font-family: 'Montserrat', sans-serif;
                                 letter-spacing: 1px;
+                                z-index: auto;
+                                -webkit-user-select: none;
                                 user-select: none;
                             }
                             
@@ -38,7 +40,7 @@
                             }
                             
                             .header {
-                                background: linear-gradient(to top, var(--color-body), #2b2b2b);
+                                background: var(--color-body);
                                 display: flex;
                                 width: 100%;
                                 justify-content: space-between;
@@ -66,8 +68,7 @@
                                 color: var(--color-white);
                             }
                             
-                            .instagram em,
-                            .facebook em {
+                            .instagram em {
                                 margin: 0 10px;
                                 cursor: pointer;
                             }
@@ -83,7 +84,7 @@
                             }
                             
                             .right-header li a {
-                                padding: 0 10px;
+                                padding-right: 10px;
                                 color: var(--color-hover-hub);
                             }
                             
@@ -160,15 +161,6 @@
                             }
                             /* NAV UNDERHEADER*/
                             
-                            .nav-menu {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                height: 57px;
-                                padding: 20px 0px;
-                                margin: 30px 0;
-                            }
-                            
                             .nav-left {
                                 font-size: 20px;
                                 padding: 5px;
@@ -181,6 +173,15 @@
                             
                             .nav-left li a:hover {
                                 color: var(--color-white);
+                            }
+                            
+                            .nav-menu {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                height: 57px;
+                                padding: 20px 0px;
+                                margin: 30px 0;
                             }
                             
                             .nav-middle {
@@ -218,15 +219,25 @@
                             /* SLIDER */
                             
                             .slide-wrap {
-                                padding: 150px 0 50px 0;
+                                padding: 25px 0 50px 0;
+                                background-color: #191919;
+                            }
+                            
+                            .slider1 ul {
+                                width: 50%;
                             }
                             
                             .slider1 {
-                                width: 100%;
+                                width: 25%;
+                            }
+                            
+                            .slider1 li {
+                                width: 33%;
+                                background-color: #191919;
                             }
                             
                             .slider1 li img {
-                                height: 500px;
+                                width: 400px;
                                 padding: 0px 0;
                             }
                             /* LOCATION */
@@ -290,7 +301,7 @@
                             .news {
                                 color: var(--color-white);
                                 padding: 15px 0;
-                                margin: 300px 0 300px 0;
+                                margin: 300px 0 150px 0;
                             }
                             
                             .news ul {
@@ -351,6 +362,34 @@
                                 color: var(--color-white);
                             }
                             
+                            .go-up {
+                                width: 90%;
+                                height: 120px;
+                                position: fixed;
+                            }
+                            
+                            .go-up em {
+                                height: auto;
+                                width: auto;
+                                color: var(--color-hover-hub);
+                                cursor: pointer;
+                                padding: 14px 14px;
+                                font-size: 20px;
+                                border: 1px solid var(--color-white);
+                                margin: 10px 0px;
+                                background-color: var(--color-black);
+                                border-radius: 50%;
+                                transition-property: background-color;
+                                transition-duration: 0.20s;
+                                transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                            }
+                            
+                            .go-up em:hover {
+                                color: var(--color-black);
+                                border: 1px solid var(--color-black);
+                                background-color: var(--color-white);
+                            }
+                            
                             @media (max-width:1200px),
                             (max-height:500px) {
                                 .nav-brand {
@@ -378,11 +417,11 @@
                                     height: 380px;
                                 }
                                 .btn-discover {
-                                    padding: 7px 16px;
+                                    padding: 12px 16px;
                                     font-size: 11px;
                                     margin: 10px 0px;
                                     transform: none;
-                                    border: 0;
+                                    border: 1px solid var(--color-white);
                                     font-weight: bold;
                                 }
                                 .showcase {

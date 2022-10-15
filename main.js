@@ -24,3 +24,4 @@ goDown.addEventListener("click", () => {
         behavior: 'smooth'
     });
 });
+

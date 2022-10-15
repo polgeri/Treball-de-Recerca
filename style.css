@@ -143,6 +143,7 @@
                                    position: relative;
                                    top: 4px;
                                    color: var(--color-hover2-hub);
+                                   
                                }
                                
                                .container {
@@ -249,6 +250,9 @@
                                    margin-top: 4px;
                                }
                                
+                               #contactos{
+                                cursor: pointer;
+                               }
                                .nav-middle li a:hover::after {
                                    width: 100%;
                                    transform: var(--color-white);
@@ -437,7 +441,7 @@
                                    padding: 20px 0px 10px 0px;
                                    color: var(--color-hover-hub);
                                    width: 15%;
-                                   margin-left: 42%;
+                                   margin-left: 40%;
                                }
                                
                                .latest-news-body h3:hover {

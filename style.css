@@ -7,8 +7,10 @@
                                    margin: 0%;
                                    padding: 0%;
                                }
-                               
-                                :root {
+
+                               /* VARIABLES DE COLORS PRE-ESTABLERTS */
+                              
+                               :root {
                                    --color-body: #191919;
                                    --color-white: #fff;
                                    --color-hover-hub: #cccaca;
@@ -19,6 +21,8 @@
                                    --transition: 0.20s ease-in-out;
                                }
                                
+                               /*PROPIETATS PRE-ESTABLERTES DEL COS DE LA PÀGINA*/
+
                                body {
                                    background-color: var(--color-body);
                                    color: var(--color-white);
@@ -38,6 +42,8 @@
                                ul {
                                    list-style: none;
                                }
+                               
+                               /* PERSONALITZACIÓ DE LA CAPÇALERA DE LA PÀGINA */
                                
                                .header {
                                    background: var(--color-black);
@@ -153,7 +159,8 @@
                                    width: 90%;
                                    margin: auto;
                                }
-                               /*NAVIGATION*/
+
+                               /*NAVEGACIÓ CENTRAL DE LA PAGINA*/
                                
                                .nav-main {
                                    font-size: 1em;
@@ -207,7 +214,8 @@
                                .nav-search li a:hover {
                                    color: var(--color-white);
                                }
-                               /* NAV UNDERHEADER*/
+
+                               /* NAVEGACIÓ DE SECCIONS*/
                                
                                .nav-left {
                                    font-size: 20px;
@@ -261,8 +269,6 @@
                                    transform: var(--color-white);
                                }
                                
-                               .cross {}
-                               
                                .nav-middle li a strong {
                                    color: var(--color-hover-hub);
                                }
@@ -285,49 +291,44 @@
                                    color: var(--color-white);
                                    transition: var(--transition);
                                }
-                               /* SLIDER */
+
+                               /* ZONA DESCUBRIR MÁS */
                                
-                               .slide-wrap {
-                                   padding: 200px 0 50px 0;
-                                   background-color: var(--color-body);
-                               }
-                               
-                               .slider-1,
-                               .slider-2 {
-                                   background-color: #ff8800;
-                                   height: 300px;
-                                   display: flex;
-                                   align-items: center;
-                                   justify-content: center;
-                                   list-style: none;
-                               }
-                               
-                               .slider-1 h2,
-                               .slider-1 h3,
-                               .slider-2 h2,
-                               .slider-2 h3 {
-                                   display: flex;
-                                   align-content: center;
-                                   justify-content: center;
-                               }
-                               
-                               .slider-1 h2 strong,
-                               .slider-2 h2 strong {
-                                   display: flex;
-                                   align-content: center;
-                                   justify-content: center;
-                               }
-                               
-                               .slider-1 h2,
-                               .slider-2 h2 {
-                                   padding: 100px 100px 50px 100px;
-                               }
-                               
-                               .slider-1 h3,
-                               .slider-2 h3 {
-                                   padding: 20px 100px 50px 100px;
-                               }
-                               /* LOCATION */
+                               .showcase {
+                                width: 100%;
+                                height: 850px;
+                                margin: 400px 0px 200px 0;
+                                padding: 200px 0 10px 0;
+                                background: url('./img/brand-discover2.png') no-repeat center center/cover;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                }
+                            
+                                .btn-discover {
+                                cursor: pointer;
+                                display: inline-block;
+                                border: 0;
+                                font-weight: bold;
+                                padding: 14px 32px;
+                                background-color: var(--color-black);
+                                color: var(--color-white);
+                                font-size: 14px;
+                                border: 1px solid var(--color-white);
+                                margin: 10px 0px;
+                                box-shadow: 0 0px 30px var(--color-black);
+                                transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                }
+                            
+                                .btn-discover:hover {
+                                background-color: var(--color-white);
+                                color: var(--color-black);
+                                border: 1px solid var(--color-black);
+                                box-shadow: 0 0px 30px 0 var(--color-white);
+                                }
+
+                               /* APARTAT LOCALITZACIÓ DE LA WEB */
                                
                                .locate {
                                    padding: 40px 0px 50px 0px;
@@ -352,42 +353,8 @@
                                    color: var(--color-white);
                                    font-size: 18px;
                                }
-                               /* SHOWCASE*/
-                               
-                               .showcase {
-                                   width: 100%;
-                                   height: 850px;
-                                   margin: 400px 0px 200px 0;
-                                   padding: 200px 0 10px 0;
-                                   background: url('./img/brand-discover2.png') no-repeat center center/cover;
-                                   display: flex;
-                                   flex-direction: column;
-                                   align-items: center;
-                                   justify-content: center;
-                               }
-                               
-                               .btn-discover {
-                                   cursor: pointer;
-                                   display: inline-block;
-                                   border: 0;
-                                   font-weight: bold;
-                                   padding: 14px 32px;
-                                   background-color: var(--color-black);
-                                   color: var(--color-white);
-                                   font-size: 14px;
-                                   border: 1px solid var(--color-white);
-                                   margin: 10px 0px;
-                                   box-shadow: 0 0px 30px var(--color-black);
-                                   transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                               }
-                               
-                               .btn-discover:hover {
-                                   background-color: var(--color-white);
-                                   color: var(--color-black);
-                                   border: 1px solid var(--color-black);
-                                   box-shadow: 0 0px 30px 0 var(--color-white);
-                               }
-                               /* LATEST NEWS */
+
+                               /* NOVETATS CATÀLEG */
                                
                                .news {
                                    color: var(--color-white);
@@ -466,7 +433,8 @@
                                    color: var(--color-white);
                                    transition: var(--transition);
                                }
-                               /* GO-UP */
+
+                               /* BOTO GO-UP */
                                
                                .go-up {
                                    font-size: 20px;
@@ -495,7 +463,7 @@
                                    border: 1px solid var(--color-black);
                                    background-color: var(--color-white);
                                }
-                               /* FOOTER */
+                               /* PEU DE PÀGINA  */
                                
                                .footer {
                                    padding: 20px 20px 0px 20px;
@@ -561,7 +529,7 @@
                                    shape-outside: circle();
                                    clip-path: circle();
                                }
-                               /* COPYRIGHT */
+                               /* ZONA DEL COPYRIGHT DE LA TENDA */
                                
                                .copyright {
                                    padding: 0px 0px 0px 50px;

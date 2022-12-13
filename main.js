@@ -25,7 +25,7 @@ goUp.addEventListener("click", () => {
 
 /* DEFININT VARIABLE GO-DOWN(BOTÓ CONTACTES) */
 
-const goDown = document.querySelector("#contactos > strong")
+const goDown = document.querySelector("#contactos > strong");
 
 /* DONANT-LI INSTRUCCIONS A LA FUNCIÓ GO-DOWN */
 
@@ -36,3 +36,13 @@ goDown.addEventListener("click", () => {
     });
 });
 
+
+
+
+function ScrollToLatest(){
+    window.scrollTo({
+        top: 3000,
+        behavior: 'smooth'
+    })
+    
+}

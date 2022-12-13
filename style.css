@@ -261,7 +261,8 @@
                                    margin-top: 4px;
                                }
                                
-                               #contactos{
+                               #contactos,
+                               .nav-middle-latest h4 a{
                                 cursor: pointer;
                                }
                                .nav-middle li a:hover::after {
@@ -271,12 +272,43 @@
                                
                                .nav-middle li a strong {
                                    color: var(--color-hover-hub);
+                                   
                                }
                                
                                .nav-middle li a strong:hover {
                                    color: var(--color-white);
                                    transition: var(--transition);
+                                  
+                                
                                }
+
+                               .nav-middle-latest h4 a strong{
+                                color:var(--color-gold);
+                                
+                                
+                               }
+                               
+
+                               .nav-middle-latest h4 a::after{
+                                   content: '';
+                                   display: block;
+                                   width: 0;
+                                   background: var(--color-gold);
+                                   transition: width .25s ease-in-out;
+    
+                            }
+                               .nav-middle-latest h4 a:hover::after{
+                                width: 100%;
+                                transform: var(--color-gold);
+                              
+                            }
+                            .nav-middle-latest h4 a strong:hover {
+                                color: red;
+                                transition: var(--transition);
+                                
+                               
+                            }
+
                                
                                .nav-right li {
                                    font-size: 20px;
@@ -286,7 +318,7 @@
                                .nav-right li a {
                                    color: var(--color-hover-hub);
                                }
-                               
+                    
                                .nav-right li a em:hover {
                                    color: var(--color-white);
                                    transition: var(--transition);

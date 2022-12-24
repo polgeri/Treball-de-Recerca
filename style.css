@@ -526,7 +526,7 @@
                                .grid-site-1  ul li a,
                                .grid-site-2  ul li a,
                                .grid-site-3  ul li a,
-                               .grid-site-4  ul li{
+                               .grid-site-4  ul li a{
                                 cursor: pointer;
                                }
                                

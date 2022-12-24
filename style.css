@@ -522,6 +522,13 @@
                                    margin: 20px 40px 0px 40px;
                                    padding: 20px;
                                }
+
+                               .grid-site-1  ul li a,
+                               .grid-site-2  ul li a,
+                               .grid-site-3  ul li a,
+                               .grid-site-4  ul li{
+                                cursor: pointer;
+                               }
                                
                                .gs1a1:hover,
                                .gs2a1:hover,

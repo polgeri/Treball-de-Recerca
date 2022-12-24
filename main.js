@@ -36,13 +36,17 @@ goDown.addEventListener("click", () => {
     });
 });
 
-
-
-
 function ScrollToLatest(){
     window.scrollTo({
         top: 3000,
         behavior: 'smooth'
-    })
+    });
     
+}
+
+function inwork(){
+    swal({
+    title:"En fuera de servicio",
+    icon:"error",
+    });
 }

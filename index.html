@@ -21,6 +21,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
 <!-- FONT AWESOME-->
 
@@ -29,6 +31,10 @@
 <!-- SCROLL REVEAL -->
 
 <script src="https://unpkg.com/scrollreveal"></script>
+
+<!--  ALERTES MODIFICADES -->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <!-- CAPÇALERA DE LA PÀGINA -->
 
@@ -42,7 +48,7 @@
             <h6><strong> REBAJAS DE VERANO DEL 25% &nbsp; &nbsp; </strong></p>
             </h6>
             <p>
-                <h6> <strong><a target="_self" href="#" class="clickhere"> <em> CLICK AQUÍ </em> </a> </strong></h6>
+                <h6> <strong><a target="_self" href="#" class="clickhere" onclick="inwork()"> <em> CLICK AQUÍ </em> </a> </strong></h6>
             </p>
         </nav>
     </div>
@@ -70,7 +76,7 @@
         <nav class="right-header" aria-label="my-account">
             <ul>
                 <li>
-                    <a target="_self" href="/login.html" class="login" aria-label="Registrarse/Iniciar sesión">
+                    <a target="_self" href="login.html" class="login" aria-label="Registrarse/Iniciar sesión">
                         <em class="far fa-user"></em><strong> MI CUENTA </strong>
                     </a>
                 </li>
@@ -97,7 +103,7 @@
             <h1 class="nav-tittle"> Marta Grau Moda</h1>
             <ul class="nav-search">
                 <li>
-                    <a title="Buscar" href="#">
+                    <a title="Buscar" href="#" onclick="inwork()">
                         <em class="fas fa-search"></em>
                     </a>
                 </li>
@@ -111,26 +117,26 @@
             <nav class="nav-menu" aria-label="navigation">
                 <ul class="nav-left">
                     <li>
-                        <a>
+                        <a onclick="inwork()">
                             <em class="fas fa-bars"></em>
                         </a>
                     </li>
                 </ul>
                 <ul class="nav-middle">
                     <li class="nav-middle-latest">
-                        <h4><a target="_self" onclick="ScrollToLatest();"><strong>Novedades</strong></a></h4>
+                        <h4><a target="_self" onclick="ScrollToLatest();" ><strong>Novedades</strong></a></h4>
                     </li>
                     <li class="nav-middle-woman">
-                        <h4><a target="_self" href="#"><strong>Mujer</strong></a></h4>
+                        <h4><a target="_self" onclick="inwork()"><strong>Mujer</strong></a></h4>
                     </li>
                     <li class="nav-middle-man">
-                        <h4><a target="_self" href="#"><strong>Hombre</strong></a></h4>
+                        <h4><a target="_self" onclick="inwork()" ><strong>Hombre</strong></a></h4>
                     </li>
                     <li class="nav-middle-discount">
-                        <h4><a target="_self" href="#"><strong>Rebajas</strong></a></h4>
+                        <h4><a target="_self" onclick="inwork()"><strong>Rebajas</strong></a></h4>
                     </li>
                     <li class="nav-middle-brands">
-                        <h4><a target="_self" href="#"><strong>Marcas</strong></a></h4>
+                        <h4><a target="_self" onclick="inwork()"><strong>Marcas</strong></a></h4>
                     </li>
                     <li class="nav-middle-contacts">
                         <h4><a target="_self" id="contactos"><strong>Contacto</strong></a></h4>
@@ -138,7 +144,7 @@
                 </ul>
                 <ul class="nav-right">
                     <li>
-                        <a title="Carrito de compra" href="#">
+                        <a title="Carrito de compra" href="#" onclick="inwork()">
                             <em class="fas fa-shopping-bag"></em>
                         </a>
                     </li>
@@ -180,59 +186,59 @@
             </div>
             <div class="latest-news-body">
                 <div class="info">
-                    <a target="_self" href="#" aria-label="vestido azul marino">
+                    <a target="_self" aria-label="vestido azul marino" onclick="inwork()">
                         <img title="Vestido" src="img/vestido1.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">35 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" href="#" aria-label="Vestido">
+                    <a target="_self" aria-label="Vestido" onclick="inwork()">
                         <img title="Vestido" src="img/vestido2.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">20 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" href="#" aria-label="Vestido">
-                        <img title="Vestido" src="img/vestido3.png" alt="Vestido" ;>
+                    <a target="_self"  aria-label="Vestido" onclick="inwork()">
+                        <img onclick="inwork()" title="Vestido" src="img/vestido3.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">40 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" href="#" aria-label="Vestido">
+                    <a target="_self" aria-label="Vestido" onclick="inwork()">
                         <img title="Vestido" src="img/vestido4.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em> VESTIDO</em></a></h3>
                     <h4 class="clothes-price">65 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" href="#" aria-label="Vestido">
+                    <a target="_self" aria-label="Vestido" onclick="inwork()">
                         <img title="Vestido" src="img/vestido5.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">25 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" href="#" aria-label="Vestido">
+                    <a target="_self" aria-label="Vestido" onclick="inwork()">
                         <img title="Vestido" src="img/vestido6.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">30 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" href="#" aria-label="Vestido">
+                    <a target="_self" aria-label="Vestido" onclick="inwork()">
                         <img title="Vestido" src="img/vestido7.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">50 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" href="#" aria-label="Vestido">
+                    <a target="_self"onclick="inwork()" aria-label="Vestido">
                         <img title="Vestido" src="img/vestido8.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" href="#"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">20 €</h4>
                 </div>
             </div>

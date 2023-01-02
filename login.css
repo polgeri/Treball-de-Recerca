@@ -38,7 +38,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: ;
+    
 }
 
 .login-box {
@@ -60,4 +60,11 @@ h1 {
 input {
     background-color: inherit;
     color: #fff;
+}
+
+.password-forgotten{
+    cursor: pointer;
+}
+.create-account{
+    cursor: pointer;
 }

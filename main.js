@@ -44,9 +44,27 @@ function ScrollToLatest(){
     
 }
 
-function inwork(){
+function inworkCAT(){
+    swal({
+    title:"En fora de servei",
+    icon:"error",
+    });
+}
+
+function inworkESP(){
     swal({
     title:"En fuera de servicio",
     icon:"error",
     });
+}
+
+const SpainSite = "../es/index.html";
+const CatalanSite = "../cat/index.html";
+
+function ChangeLanguageToSpanish(){
+    window.location.replace(SpainSite);
+}
+
+function ChangeLanguageToCatalan(){
+    window.location.replace(CatalanSite);
 }

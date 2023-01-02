@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="cat">
+<!-- TÍTOL PÀGINA WEB -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marta Grau Moda</title>
+</head>
+
+<!-- CSS PERSONALITZAT -->
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../normalize.css">
+<link rel="icon" href="../img/brand.ico">
+<link rel="stylesheet" type="text/css" href="../mediaqueries.css">
+
+<!--FONT TITTLE-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<!-- SCROLL REVEAL -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--  ALERTES MODIFICADES -->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- CAPÇALERA DE LA PÀGINA -->
+
+<header>
+   
+    <!-- DESCOMPTES CAPÇALERA -->
+    
+   <div class="discounts">
+        <nav class="disc-center" aria-label="discounts and sales">
+            <p></p>
+            <h6><strong> REBAIXES D'ESTIU DEL 25% &nbsp; &nbsp; </strong></p>
+            </h6>
+            <p>
+                <h6> <strong><a target="_self"  class="clickhere" onclick="inworkCAT()"> <em> CLICA AQUÍ </em> </a> </strong></h6>
+            </p>
+        </nav>
+    </div>
+   
+   <!-- ZONA XARXES SOCIALS -->
+   
+    <div class="header">
+        <nav class="left-header" aria-label="social-links">
+            <ul class="nav-header-left">
+                <li>
+                    <h3 class="header-contact"> ¡ SEGUEIX-NOS !
+                    </h3>
+                </li>
+                <li>
+                    <a rel="noopener" class="instagram" href="https://www.instagram.com/martagraumoda/" target="_blank" aria-label="instagram">
+                        <em class="fab fa-instagram"></a></em>
+                        <a rel="noopener" class="whatsapp" href="https://wa.me/655993739" target="_blank" aria-label="whatsapp">
+                            <em class="fa-brands fa-whatsapp"></em></a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- REGISTRE/INICI SESSIÓ -->
+        
+        <nav class="right-header" aria-label="my-account">
+            <ul>
+                <li>
+                    <a>
+                        <img onclick="ChangeLanguageToSpanish();" class="spainflag" alt="spain-language" src="../img/spainflag.png">
+                    </a>
+                    <a target="_self" href="../cat/login.html" class="login" aria-label="Registrarse/Iniciar sesión">
+                        <em class="far fa-user"></em><strong> EL MEU COMPTE </strong>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- COS DE LA PÀGINA WEB -->
+
+<body>
+    <div class="container">
+        
+        <!-- FOTO LOGO, TÍTOL I LUPA DE LA PÀGINA WEB -->
+        
+        <div class="nav-main" aria-label="navigation">
+            <ul>
+                <li>
+                    <a class="brand" href="../cat/index.html">
+                        <img class="nav-brand" alt="brand-logo" src="../img/brand.png">
+                    </a>
+                </li>
+            </ul>
+            <h1 class="nav-tittle"> Marta Grau Moda </h1>
+            <ul class="nav-search">
+                <li>
+                    <a title="Buscar" onclick="inworkCAT()">
+                        <em class="fas fa-search"></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+       
+       <!-- BARRA DE NAVEGACIÓ PRINCIPAL -->
+       
+        <div class="underheader">
+            <nav class="nav-menu" aria-label="navigation">
+                <ul class="nav-left">
+                    <li>
+                        <a onclick="inworkCAT()">
+                            <em class="fas fa-bars"></em>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-middle">
+                    <li class="nav-middle-latest">
+                        <h4><a target="_self" onclick="ScrollToLatest();" ><strong>Novetats</strong></a></h4>
+                    </li>
+                    <li class="nav-middle-woman">
+                        <h4><a target="_self" onclick="inworkCAT()"><strong>Dona</strong></a></h4>
+                    </li>
+                    <li class="nav-middle-man">
+                        <h4><a target="_self" onclick="inworkCAT()" ><strong>Home</strong></a></h4>
+                    </li>
+                    <li class="nav-middle-discount">
+                        <h4><a target="_self" onclick="inworkCAT()"><strong>Rebaixes</strong></a></h4>
+                    </li>
+                    <li class="nav-middle-brands">
+                        <h4><a target="_self" onclick="inworkCAT()"><strong>Marques</strong></a></h4>
+                    </li>
+                    <li class="nav-middle-contacts">
+                        <h4><a target="_self" id="contactos"><strong>Contactes</strong></a></h4>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                    <li>
+                        <a title="Carrito de compra" onclick="inworkCAT()">
+                            <em class="fas fa-shopping-bag"></em>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- IMATGE DESCUBRIR MÁS -->
+        
+        <header class="showcase" id="animate__animated animate__bounce">
+            <h2><a  rel="noopener" href="https://www.guia33.com/item/marta-grau/" target="_blank" class="btn-discover"><strong>SOBRE NOSALTRES</strong></h2></a>
+        </header>
+        
+        <!-- LOCALITZACIÓ TENDA -->
+        
+        <div class="location">
+            <div class="locate">
+                <h2>LOCALITZACIÓ</h2><br>
+            </div>
+            <div class="direction">
+                <p><strong>C/ Àngel Guimerà, 35-39 Local 3<p> 08950 Esplugues de Llobregat<p> Barcelona
+                    <br> Telèfon 93 473 96 18</strong>
+                </p>
+            </div>
+        </div>
+       
+       <!-- MAPA GOOGLE MAPS -->
+       
+        <div class="mapouter">
+            <iframe title="Google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.8735334053963!2d2.0851916!3d41.3768323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4990b01ec0371%3A0xf128e1bc17b84707!2sMarta%20Grau%20Moda!5e0!3m2!1sca!2ses!4v1657913210993!5m2!1sca!2ses"
+                width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- NOVETATS I CATÀLEG ROBA -->
+       
+        <div class="news" aria-label="news">
+            <div class="latest-news-tittle">
+                <h2>NOVETATS</h2>
+            </div>
+            <div class="latest-news-body">
+                <div class="info">
+                    <a target="_self" aria-label="vestido azul marino" onclick="inworkCAT()">
+                        <img title="Vestido" src="../img/vestido1.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em>VESTIT</em></a></h3>
+                    <h4 class="clothes-price">35 €</h4>
+                </div>
+                <div class="info">
+                    <a target="_self" aria-label="Vestido" onclick="inworkCAT()">
+                        <img title="Vestido" src="../img/vestido2.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em>VESTIT</em></a></h3>
+                    <h4 class="clothes-price">20 €</h4>
+                </div>
+                <div class="info">
+                    <a target="_self"  aria-label="Vestido" onclick="inworkCAT()">
+                        <img onclick="inwork()" title="Vestido" src="../img/vestido3.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em>VESTIT</em></a></h3>
+                    <h4 class="clothes-price">40 €</h4>
+                </div>
+                <div class="info">
+                    <a target="_self" aria-label="Vestido" onclick="inworkCAT()">
+                        <img title="Vestido" src="../img/vestido4.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em> VESTIT</em></a></h3>
+                    <h4 class="clothes-price">65 €</h4>
+                </div>
+                <div class="info">
+                    <a target="_self" aria-label="Vestido" onclick="inworkCAT()">
+                        <img title="Vestido" src="../img/vestido5.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em>VESTIT</em></a></h3>
+                    <h4 class="clothes-price">25 €</h4>
+                </div>
+                <div class="info">
+                    <a target="_self" aria-label="Vestido" onclick="inworkCAT()">
+                        <img title="Vestido" src="../img/vestido6.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em>VESTIT</em></a></h3>
+                    <h4 class="clothes-price">30 €</h4>
+                </div>
+                <div class="info">
+                    <a target="_self" aria-label="Vestido" onclick="inworkCAT()">
+                        <img title="Vestido" src="../img/vestido7.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em>VESTIT</em></a></h3>
+                    <h4 class="clothes-price">50 €</h4>
+                </div>
+                <div class="info">
+                    <a target="_self"onclick="inworkCAT()" aria-label="Vestido">
+                        <img title="Vestido" src="../img/vestido8.png" alt="Vestido" ;>
+                    </a>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkCAT()"><em>VESTIT</em></a></h3>
+                    <h4 class="clothes-price">20 €</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- BOTÓ PER ANAR CAP A DALT -->
+        
+        <div class="go-up">
+            <em class="fas fa-chevron-up"></em>
+        </div>
+    </div>
+   
+    <!-- CUSTOM JS -->
+    
+    <script src="../main.js">
+    </script>
+</body>
+
+<!-- PEU DE PÀGINA WEB -->
+
+<footer class="footer">
+   
+   <!-- DUBTES, MARCAS I CONTACTE -->
+   
+    <div class="footer-container">
+        <div class="site-info">
+            <div class="site-grid">
+                <div class="grid-site-1">
+                    <h4 ><strong> ¿NECESSITA AJUDA? </strong></h4> <br>
+                    <ul>
+                        <li><a class="gs1a1"onclick="inworkCAT()">Preguntes Freqüents</a></li><br>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="grid-site-2">
+                    <h4><strong> EMPRESA </strong></h4><br>
+                    <ul>
+                        <li>
+                            <a  class="gs2a1" onclick="inworkCAT()">Perfil de l'empresa </a>
+                        </li><br>
+                        <li>
+                            <a class="gs2a2" onclick="inworkCAT()">Política de l'empresa</a>
+                        </li><br>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="grid-site-3">
+                    <h4><strong> CONTACTE </strong></h4><br>
+                    <ul>
+                        <li>
+                            <a class="gs3a1"> <em id="gs3a1" class="fa-solid fa-location-dot"></em> C/ Àngel Guimerà, 35-39 Local 3</a>
+                        </li><br>
+                        <li>
+                            <a class="gs3a2"> <em class="fa-solid fa-phone-flip"></em> +34 93 473 96 18</a>
+                        </li><br>
+                        <li>
+                            <a class="gs3a3"> <em id="gs3a3" class="fa-solid fa-envelope"></em> martagraumoda@gmail.com</a>
+                        </li><br>
+                    </ul>
+                </div>
+                <div class="grid-site-4">
+                    <h4><strong> MARQUES </strong></h4><br>
+                    <ul>
+                        <li>
+                            <a  class="gs4a1" onclick="inworkCAT()"> Yerse </a>
+                        </li><br>
+                        <li>
+                            <a class="gs4a2" onclick="inworkCAT()"> Sebago </a>
+                        </li><br>
+                        <li>
+                            <a class="gs4a3" onclick="inworkCAT()"> Sita Murt </a>
+                        </li><br>
+                        <li>
+                            <a class="gs4a3" onclick="inworkCAT()"> Andam </a>
+                        </li><br>
+                    </ul>
+                </div>
+                <div class="footer-brand">
+                    <div>
+                        <a target="_self" href="../cat/index.html" id="logo"><img alt="Imagen marca" src="../img/brand.ico"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-2">
+        </div>
+       
+       <!-- COPYRIGHT TENDA  -->
+       
+        <div class="copyright">
+            <h6><strong> © 2022 Marta Grau Moda. Tots els drets reservats </strong></h6>
+        </div>
+    </div>
+</footer>
+
+</html>

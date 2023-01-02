@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <!-- TÍTOL PÀGINA WEB -->
 
 <head>
@@ -11,10 +11,10 @@
 
 <!-- CSS PERSONALITZAT -->
 
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="icon" href="img/brand.ico">
-<link rel="stylesheet" type="text/css" href="mediaqueries.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../normalize.css">
+<link rel="icon" href="../img/brand.ico">
+<link rel="stylesheet" type="text/css" href="../mediaqueries.css">
 
 <!--FONT TITTLE-->
 
@@ -48,7 +48,7 @@
             <h6><strong> REBAJAS DE VERANO DEL 25% &nbsp; &nbsp; </strong></p>
             </h6>
             <p>
-                <h6> <strong><a target="_self" href="#" class="clickhere" onclick="inwork()"> <em> CLICK AQUÍ </em> </a> </strong></h6>
+                <h6> <strong><a target="_self" class="clickhere" onclick="inworkESP()"> <em> CLIC AQUÍ </em> </a> </strong></h6>
             </p>
         </nav>
     </div>
@@ -76,7 +76,10 @@
         <nav class="right-header" aria-label="my-account">
             <ul>
                 <li>
-                    <a target="_self" href="login.html" class="login" aria-label="Registrarse/Iniciar sesión">
+                    <a>
+                        <img onclick="ChangeLanguageToCatalan();" class="catflag" alt="cat-language" src="../img/catflag.png">
+                    </a>
+                    <a target="_self" href="../es/login.html" class="login" aria-label="Registrarse/Iniciar sesión">
                         <em class="far fa-user"></em><strong> MI CUENTA </strong>
                     </a>
                 </li>
@@ -95,15 +98,15 @@
         <div class="nav-main" aria-label="navigation">
             <ul>
                 <li>
-                    <a class="brand" href="/index.html">
-                        <img class="nav-brand" alt="brand-logo" src="img/brand.png">
+                    <a class="brand" href="../es/index.html">
+                        <img class="nav-brand" alt="brand-logo" src="../img/brand.png">
                     </a>
                 </li>
             </ul>
             <h1 class="nav-tittle"> Marta Grau Moda</h1>
             <ul class="nav-search">
                 <li>
-                    <a title="Buscar" href="#" onclick="inwork()">
+                    <a title="Buscar" onclick="inworkESP()">
                         <em class="fas fa-search"></em>
                     </a>
                 </li>
@@ -117,7 +120,7 @@
             <nav class="nav-menu" aria-label="navigation">
                 <ul class="nav-left">
                     <li>
-                        <a onclick="inwork()">
+                        <a onclick="inworkESP()">
                             <em class="fas fa-bars"></em>
                         </a>
                     </li>
@@ -127,16 +130,16 @@
                         <h4><a target="_self" onclick="ScrollToLatest();" ><strong>Novedades</strong></a></h4>
                     </li>
                     <li class="nav-middle-woman">
-                        <h4><a target="_self" onclick="inwork()"><strong>Mujer</strong></a></h4>
+                        <h4><a target="_self" onclick="inworkESP()"><strong>Mujer</strong></a></h4>
                     </li>
                     <li class="nav-middle-man">
-                        <h4><a target="_self" onclick="inwork()" ><strong>Hombre</strong></a></h4>
+                        <h4><a target="_self" onclick="inworkESP()" ><strong>Hombre</strong></a></h4>
                     </li>
                     <li class="nav-middle-discount">
-                        <h4><a target="_self" onclick="inwork()"><strong>Rebajas</strong></a></h4>
+                        <h4><a target="_self" onclick="inworkESP()"><strong>Rebajas</strong></a></h4>
                     </li>
                     <li class="nav-middle-brands">
-                        <h4><a target="_self" onclick="inwork()"><strong>Marcas</strong></a></h4>
+                        <h4><a target="_self" onclick="inworkESP()"><strong>Marcas</strong></a></h4>
                     </li>
                     <li class="nav-middle-contacts">
                         <h4><a target="_self" id="contactos"><strong>Contacto</strong></a></h4>
@@ -144,7 +147,7 @@
                 </ul>
                 <ul class="nav-right">
                     <li>
-                        <a title="Carrito de compra" href="#" onclick="inwork()">
+                        <a title="Carrito de compra" onclick="inworkESP()">
                             <em class="fas fa-shopping-bag"></em>
                         </a>
                     </li>
@@ -186,59 +189,59 @@
             </div>
             <div class="latest-news-body">
                 <div class="info">
-                    <a target="_self" aria-label="vestido azul marino" onclick="inwork()">
-                        <img title="Vestido" src="img/vestido1.png" alt="Vestido" ;>
+                    <a target="_self" aria-label="vestido azul marino" onclick="inworkESP()">
+                        <img title="Vestido" src="../img/vestido1.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">35 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" aria-label="Vestido" onclick="inwork()">
-                        <img title="Vestido" src="img/vestido2.png" alt="Vestido" ;>
+                    <a target="_self" aria-label="Vestido" onclick="inworkESP()">
+                        <img title="Vestido" src="../img/vestido2.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">20 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self"  aria-label="Vestido" onclick="inwork()">
-                        <img onclick="inwork()" title="Vestido" src="img/vestido3.png" alt="Vestido" ;>
+                    <a target="_self"  aria-label="Vestido" onclick="inworkESP()">
+                        <img onclick="inworkESP()" title="Vestido" src="../img/vestido3.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">40 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" aria-label="Vestido" onclick="inwork()">
-                        <img title="Vestido" src="img/vestido4.png" alt="Vestido" ;>
+                    <a target="_self" aria-label="Vestido" onclick="inworkESP()">
+                        <img title="Vestido" src="../img/vestido4.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em> VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em> VESTIDO</em></a></h3>
                     <h4 class="clothes-price">65 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" aria-label="Vestido" onclick="inwork()">
-                        <img title="Vestido" src="img/vestido5.png" alt="Vestido" ;>
+                    <a target="_self" aria-label="Vestido" onclick="inworkESP()">
+                        <img title="Vestido" src="../img/vestido5.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">25 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" aria-label="Vestido" onclick="inwork()">
-                        <img title="Vestido" src="img/vestido6.png" alt="Vestido" ;>
+                    <a target="_self" aria-label="Vestido" onclick="inworkESP()">
+                        <img title="Vestido" src="../img/vestido6.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">30 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self" aria-label="Vestido" onclick="inwork()">
-                        <img title="Vestido" src="img/vestido7.png" alt="Vestido" ;>
+                    <a target="_self" aria-label="Vestido" onclick="inworkESP()">
+                        <img title="Vestido" src="../img/vestido7.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">50 €</h4>
                 </div>
                 <div class="info">
-                    <a target="_self"onclick="inwork()" aria-label="Vestido">
-                        <img title="Vestido" src="img/vestido8.png" alt="Vestido" ;>
+                    <a target="_self"onclick="inworkESP()" aria-label="Vestido">
+                        <img title="Vestido" src="../img/vestido8.png" alt="Vestido" ;>
                     </a>
-                    <h3 class="name-clothes"><a target="_self" onclick="inwork()"><em>VESTIDO</em></a></h3>
+                    <h3 class="name-clothes"><a target="_self" onclick="inworkESP()"><em>VESTIDO</em></a></h3>
                     <h4 class="clothes-price">20 €</h4>
                 </div>
             </div>
@@ -253,7 +256,7 @@
    
     <!-- CUSTOM JS -->
     
-    <script src="main.js">
+    <script src="../main.js">
     </script>
 </body>
 
@@ -269,7 +272,7 @@
                 <div class="grid-site-1">
                     <h4 ><strong> ¿NECESITA AYUDA? </strong></h4> <br>
                     <ul>
-                        <li><a class="gs1a1"onclick="inwork()">Preguntas Frecuentes</a></li><br>
+                        <li><a class="gs1a1"onclick="inworkESP()">Preguntas Frecuentes</a></li><br>
                         <li></li>
                         <li></li>
                     </ul>
@@ -278,10 +281,10 @@
                     <h4><strong> EMPRESA </strong></h4><br>
                     <ul>
                         <li>
-                            <a  class="gs2a1" onclick="inwork()">Perfil de la empresa </a>
+                            <a  class="gs2a1" onclick="inworkESP()">Perfil de la empresa </a>
                         </li><br>
                         <li>
-                            <a class="gs2a2" onclick="inwork()">Política de la empresa</a>
+                            <a class="gs2a2" onclick="inworkESP()">Política de la empresa</a>
                         </li><br>
                         <li></li>
                     </ul>
@@ -304,22 +307,22 @@
                     <h4><strong> MARCAS </strong></h4><br>
                     <ul>
                         <li>
-                            <a  class="gs4a1" onclick="inwork()"> Yerse </a>
+                            <a  class="gs4a1" onclick="inworkESP()"> Yerse </a>
                         </li><br>
                         <li>
-                            <a class="gs4a2" onclick="inwork()"> Sebago </a>
+                            <a class="gs4a2" onclick="inworkESP()"> Sebago </a>
                         </li><br>
                         <li>
-                            <a class="gs4a3" onclick="inwork()"> Sita Murt </a>
+                            <a class="gs4a3" onclick="inworkESP()"> Sita Murt </a>
                         </li><br>
                         <li>
-                            <a class="gs4a3" onclick="inwork()"> Andam </a>
+                            <a class="gs4a3" onclick="inworkESP()"> Andam </a>
                         </li><br>
                     </ul>
                 </div>
                 <div class="footer-brand">
                     <div>
-                        <a target="_self" href="index.html" id="logo"><img alt="Imagen marca" src="img/brand.ico"></a>
+                        <a target="_self" href="../es/index.html" id="logo"><img alt="Imagen marca" src="../img/brand.ico"></a>
                     </div>
                 </div>
             </div>

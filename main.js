@@ -58,8 +58,8 @@ function inworkESP(){
     });
 }
 
-const SpainSite = "../es/index.html";
-const CatalanSite = "../cat/index.html";
+const SpainSite = "../index.html";
+const CatalanSite = "cat/index.html";
 
 function ChangeLanguageToSpanish(){
     window.location.replace(SpainSite);
@@ -68,3 +68,4 @@ function ChangeLanguageToSpanish(){
 function ChangeLanguageToCatalan(){
     window.location.replace(CatalanSite);
 }
+

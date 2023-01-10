@@ -46,14 +46,14 @@ function ScrollToLatest(){
 
 function inworkCAT(){
     swal({
-    title:"En fora de servei",
+    title:"Fora de servei",
     icon:"error",
     });
 }
 
 function inworkESP(){
     swal({
-    title:"En fuera de servicio",
+    title:"Fuera de servicio",
     icon:"error",
     });
 }
